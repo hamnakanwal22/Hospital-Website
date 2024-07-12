@@ -1,11 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Website</title>
+    <link rel="icon" href="images/favicon.png"> <!--favi icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css    ">
+    <script src="https://kit.fontawesome.com/dac67e62d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- =================Nav Bar Section======================= -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid ">
+                </a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#about">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#testtimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="nav-link " aria-current="page" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ================= Baner Section======================= -->
+    <section id="home" class="home">
+        <div class="banner wrapper">
+            <div class="container">
+                <div class="row align-item-center">
+                    <div class="col-md-6 order-md-1 order-2 top">
+                        <h3 class="text-white">Better Life thought</h3>
+                        <h1>Better Dentistry</h1>
+                        <p class="text-white">Dentistry is a medical profession that focuses on maintaining oral health
+                            involving teeth,
+                            gums, and mouth. Dentistry is also concerned with correcting oral birth defects</p>
+                        <a href="#" class="main-btn fil-btn mt-3 ">Appoitment</a>
+                        <a href="#" class="main-btn mt-3 ms-3">Learn more</a>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 mb-5 mb-md-0">
+                        <div class="top-right-sec">
+                            <div class="animate-img">
+                                <img src="images/top-banner-img/woman-brush.png" class="img-fluid aimg1">
+                                <img src="images/top-banner-img/doctor.png" alt="img" class="img-fluid ">
+                            </div>
+                            <img src="images/top-banner-img/top-right-img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper pb-0 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img src="images/top-banner-img/Appointment-icon.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-black">Easy Appoitment</h4>
+                                <p class="text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                                    cumque, suscipit
+                                    incidunt doloremque deleniti ea?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img src="images/top-banner-img/Emergency-icon.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-black">Emergency Services</h4>
+                                <p class="text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                                    cumque, suscipit
+                                    incidunt doloremque deleniti ea?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center ">
+                            <div class="icon-box">
+                                <img src="images/top-banner-img/7-Service-icon.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-black">24/7 Services</h4>
+                                <p class="text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                                    cumque, suscipit
+                                    incidunt doloremque deleniti ea?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= About Section======================= -->
+    <section id="about " class="about wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <div class="position-relative">
+                        <img src="images/about/about-banner1.png" class="img-fluid">
+                        <img src="images/about/about-img2.png" class="about-animate">
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>Welcome to our family</h2>
+                    <p class="text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, porro
+                        error? Iusto nihil maiores nulla corporis explicabo. Magni, ex quod maiores eum, qui quas,
+                        expedita fuga quos laborum ducimus sit!</p>
+                    <div class="card mt-5">
+                        <div class="about-clanic">
+                            <h4>500+</h4>
+                            <p>Happy Patients</p>
+                        </div>
+                        <div class="about-clanic">
+                            <h4>88+</h4>
+                            <p>Qualify Doctors</p>
+                        </div>
+                        <div class="about-clanic">
+                            <h4>25+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="about-clanic">
+                            <h4>55+</h4>
+                            <p>Dental Awards</p>
+                        </div>
+                        <span class="line-1"></span>
+                        <span class="line-2 "></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Services Section======================= -->
+    <section id="services" class="services wrapper">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-white">Our Services</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img src="images/services/1.svg" alt="img" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Complete Dentistry</h4>
+                            <p>Tooth decay was low in pre-agricultural societies, , represents the oldest known
+                                dentistry, although a 2017 study suggests that 130,000 years</p>
+                            <a href="#" class="main-btn mt-3">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img src="images/services/2.svg" alt="img" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Dental Selants</h4>
+                            <p>Tooth decay was low in pre-agricultural societies, , represents the oldest known
+                                dentistry, although a 2017 study suggests that 130,000 years</p>
+                            <a href="#" class="main-btn mt-3">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img src="images/services/3.svg" alt="img" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Dental Dictionary</h4>
+                            <p>Tooth decay was low in pre-agricultural societies, , represents the oldest known
+                                dentistry, although a 2017 study suggests that 130,000 years</p>
+                            <a href="#" class="main-btn mt-3">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img src="images/services/4.svg" alt="img" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Dental Impants</h4>
+                            <p>Tooth decay was low in pre-agricultural societies, , represents the oldest known
+                                dentistry, although a 2017 study suggests that 130,000 years</p>
+                            <a href="#" class="main-btn mt-3">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img src="images/services/5.svg" alt="img" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Oral Surgery</h4>
+                            <p>Tooth decay was low in pre-agricultural societies, , represents the oldest known
+                                dentistry, although a 2017 study suggests that 130,000 years</p>
+                            <a href="#" class="main-btn mt-3">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img src="images/services/6.svg" alt="img" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>General Denistary</h4>
+                            <p>Tooth decay was low in pre-agricultural societies, , represents the oldest known
+                                dentistry, although a 2017 study suggests that 130,000 years</p>
+                            <a href="#" class="main-btn mt-3">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ================= Team Section======================= -->
+    <section id="team" class="team wrapper">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Our Dentists</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img src="images/team/team1.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Dr.Darry Milin</h5>
+                            <p>Oral Surgeon</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img src="images/team/team2.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Dr. Mohammad Ibrahim</h5>
+                            <p>Maxillofacial Surgeon</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-2">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img src="images/team/team3.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Dr. Asifa Iqbal</h5>
+                            <p>Orthodontist</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Our Gallery Section======================= -->
+    <section id="gallery" class="gallery wrapper">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-white">Our Gallery</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="images/gallery/1.jpg" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="images/gallery/2.jpg" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="images/gallery/3.jpg" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="images/gallery/5.jpg" alt="" class="w-100 h-100">
+                </div>
+                <div class="col-md-8 col-sm-6 mb-4">
+                    <img src="images/gallery/4.jpg" alt="" class="w-100 h-100">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= Testimonial Section======================= -->
+    <section id="testtimonial" class="testimonial wrapper">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Testimonial</h3>
+                </div>
+            </div>
+            <div class="row align-item-center">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="images/testimonial/client1.png" alt="img" class="img-fluid">
+                        <h4 class="pt-4 mb-0">Aliceano Colby</h4>
+                        <p>CEO of Prime IT</p>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 col-sm-6 ps-md-4 pt-sm-0 test">
+                    <h4>Aewsome Work</h4>
+                    <p>"Alice Colby-Hall, Professor of French Literature, received her Ph.D. from Columbia University
+                        and, though officially retired, continues to teach courses on medieval French literature and to
+                        direct research in this area."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Appoitment Section======================= -->
+    <section class="appoitment wrapper">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 col-sm-8 col-md-6 col-10">
+                    <h3 class="text-white">Request your appointment and start your smile makeover!</h3>
+                    <a href="#" class="main-btn fil-btn mt-5">Request appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Blog Section======================= -->
+    <section id="blog" class="blog wrapper">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Latest Blog</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="p-0 card border-0 rounded-0">
+                        <img src="images/blog/1.jpg" alt="blog" class="img-fluid">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Dental Insurance with Benifits</h5>
+                            <h6 class="text-white">My Admin - March 18, 2024</h6>
+                            <p class="text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                                illo tenetur quia blanditiis quis sit.</p>
+                            <a href="#" class="main-btn mt-2">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="p-0 card border-0 rounded-0">
+                        <img src="images/blog/2.jpg" alt="blog" class="img-fluid">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Dental Insurance with Benifits</h5>
+                            <h6 class="text-white">My Admin - March 18, 2024</h6>
+                            <p class="text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                                illo tenetur quia blanditiis quis sit.</p>
+                            <a href="#" class="main-btn mt-2">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="p-0 card border-0 rounded-0">
+                        <img src="images/blog/3.jpg" alt="blog" class="img-fluid">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Dental Insurance with Benifits</h5>
+                            <h6 class="text-white">My Admin - March 18, 2024</h6>
+                            <p class="text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                                illo tenetur quia blanditiis quis sit.</p>
+                            <a href="#" class="main-btn mt-2">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Blog Section======================= -->
+    <section id="contact" class="footer wrapper">
+        <div class="pb-3 container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 left">
+                    <h5>Clanic Location</h5>
+                    <p class="ps-0">Modern Hospital Fauji Foundation Hospital Rawalpindi having 837 RWP</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-item-baseline"><i class="fas fa-map-marker-alt text-white"></i><a href="#">4004, Defence Area RWP</a></li>
+        <li class="d-flex align-item-baseline"><i class="fas fa-phone-alt text-white "></i><a href="#">+92 8945773 858</a></li>
+        <li class="d-flex align-item-baseline"><i class="fas fa-envelope text-white "></i><a  href="hiharajpoot@gmail.com">hiharajpoot@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  mb-4 arrow">
+                    <h5>More Links</h5>
+                    <ul class="linl-widget p-0">
+                        <li><a href="#"></a>About Us</li>
+                        <li><a href="#"></a>Our Office</li>
+                        <li><a href="#"></a>Delivery</li>
+                        <li><a href="#"></a>Our Store</li>
+                        <li><a href="#"></a>Guarente</li>
+                        <li><a href="#"></a>Buy Gift Card</li>
+                        <li><a href="#"></a>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 arrow">
+                    <h5>More Links</h5>
+                    <ul class="linl-widget p-0">
+                        <li><a href="#"></a>About Us</li>
+                        <li><a href="#"></a>Our Office</li>
+                        <li><a href="#"></a>Delivery</li>
+                        <li><a href="#"></a>Our Store</li>
+                        <li><a href="#"></a>Guarente</li>
+                        <li><a href="#"></a>Buy Gift Card</li>
+                        <li><a href="#"></a>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6  mb-4">
+                    <h5>NEWSLETTER</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="Enter Your Email Here">
+                        <button type="submit" class="main-btn text-white border-white mt-3 rounded-2">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-item-center p-0">
+                        <li><a href="#" class="f-icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="f-icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="f-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="f-icon"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copy  ">
+      <p class="text-center ">&copy; 2024<a href="#" target="_blank" class="text-decoration-none text-white "> HAMNA </a>&trade; .All rights are reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
